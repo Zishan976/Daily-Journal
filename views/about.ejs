@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Daily Journal</title>
-    <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <%- include("partials/header") %>
+<%- include("partials/header") %>
 
-    <div class="container main">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-          <h1>About</h1>
-          <p><%= aboutContent %></p>
-        </div>
-      </div>
+<div class="container main">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+      <h1>About</h1>
+      <p><%= aboutContent %></p>
     </div>
+  </div>
+</div>
 
-    <%- include("partials/footer") %>
-  </body>
-</html>
+<%- include("partials/footer") %>
