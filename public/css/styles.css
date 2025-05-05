@@ -1,0 +1,146 @@
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(90deg, #1abc9c, #16a085);
+  padding: 20px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-padding {
+  margin-top: 30px;
+}
+.footer p {
+  margin: 0;
+  padding-right: 10px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+.social-icons a {
+  color: white;
+  margin-left: 15px;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 50%;
+}
+.social-icons a:hover {
+  color: #f39c12;
+  background: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer p {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #fff;
+}
+.main {
+  min-height: 75vh;
+}
+
+.nav li a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.container.main {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.btn-primary.custom {
+  background: #1abc9c;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary.custom:hover {
+  background: #16a085;
+  box-shadow: 0 0 8px #16a085;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px #1abc9c;
+  outline: none;
+}
+.full-width {
+  width: 100%;
+}
