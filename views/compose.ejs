@@ -13,30 +13,49 @@
     <%- include("partials/header") %>
 
     <div class="container main">
-      <h1>Compose</h1>
-      <form action="/compose" method="POST">
-        <div class="form-group">
-          <label for="title">Title:</label>
-          <input
-            type="text"
-            class="form-control"
-            name="postTitle"
-            id="title"
-            required
-          />
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+          <h1>Compose</h1>
+          <form
+            action="/compose"
+            method="POST"
+            aria-label="Compose new post form"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="title">Title:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="postTitle"
+                id="title"
+                aria-required="true"
+                aria-describedby="titleHelp"
+                required
+              />
+              <small id="titleHelp" class="form-text text-muted"
+                >Enter the title of your post.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="post">Post:</label>
+              <textarea
+                class="form-control"
+                name="postBody"
+                id="post"
+                rows="10"
+                aria-required="true"
+                aria-describedby="postHelp"
+                required
+              ></textarea>
+              <small id="postHelp" class="form-text text-muted"
+                >Write the content of your post here.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-primary custom">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="post">Post:</label>
-          <textarea
-            class="form-control"
-            name="postBody"
-            id="post"
-            rows="10"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary custom">Submit</button>
-      </form>
+      </div>
     </div>
 
     <%- include("partials/footer") %>
